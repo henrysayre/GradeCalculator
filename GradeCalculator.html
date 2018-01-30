@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GradeCalculator.js</title>
+    <script src="GradeCalculator.js"></script>
+    <link rel="stylesheet" href="GradeCalculator.css"/>
+</head>
+<body>
+<table border="1" cellspacing="2" cellpadding="5">
+      <tr id="Homework">
+    <td>Enter Homework Grades: </td>
+        <td><input type = "text" id="Homework Grades" value="70,80" size="25"></td>
+        <td>Enter Homework Weight: <input type = "text" id="Homework Weight" placeholder="ex: 30" value="25" size="10"></td>
+      </tr>
+    <tr>
+        <tr id = "Tests">
+        <td>Enter Test Grades: </td>
+        <td><input type = "text" id="Test Grades" value="80,90" placeholder=" " size="25"></td>
+        <td>Enter Test Weight: <input type = "text" id="Test Weight" placeholder="ex: 30" value="30" size="10"></td>
+    </tr>
+    <tr>
+        <tr id = "Classwork">
+        <td>Enter Classwork Grades: </td>
+        <td><input type = "text" id="Classwork Grades" value="50,80" size="25"></td>
+        <td>Enter Classwork Weight: <input type = "text" id="Classwork Weight" placeholder="ex: 30" value="20" size="10"></td>
+    </tr>
+        <tr id = "Midterm">
+        <td>Enter Midterm Grade: </td>
+        <td><input type = "text" id="Midterm Grade" value="75" size="25"></td>
+        <td>Enter Midterm Weight: <input type = "text" id="Midterm Weight" placeholder="ex: 40" value="25" size="10"></td>
+    </tr>
+        <tr id = "Final Grades">
+        <td>Current Grade: <div id="Current Grade"></div> </td>
+        <td>Desired Grade: <input type= "text" id="Desired Grade" value="90" size="10"></td>
+        <td>Final Exam Weight: <input type="text" id="Final Weight" value="30" size="10"></td>
+        <td>You Need This On The Final:          <div id="Grade Needed"></div></td>
+        </tr>
+</table>
+<div id="Fail"></div>
+
+
+</body>
+<button id="myButton" onclick="calculateCurrentGrade()">Show me my grade!</button>
+<button id="myButton2" onclick="calculateGradeNeeded()">What grade do I need?</button>
+</html>
